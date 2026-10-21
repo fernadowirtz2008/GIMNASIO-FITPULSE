@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gimnasio Fitness DAW">
+    <title>Fitness DAW - Gimnasio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>FITNESS DAW</h1>
+        <p>Tu gimnasio, tu reto, tu progreso</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#tarifas">Tarifas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Entrena para superarte</h2>
+            <p>Mejora tu forma física con nuestros entrenadores.</p>
+            <a class="boton" href="#contacto">Solicitar información</a>
+        </section>
+
+        <section id="actividades">
+            <h2>Nuestras actividades</h2>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Musculación</h3>
+                    <p>Entrenamiento de fuerza con equipamiento moderno.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Spinning</h3>
+                    <p>Sesiones de bicicleta para mejorar la resistencia.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Entrenamiento personal</h3>
+                    <p>Planes adaptados a tus objetivos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tarifas">
+            <h2>Nuestras tarifas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modalidad</th>
+                        <th>Precio mensual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Básica</td><td>25 €</td></tr>
+                    <tr><td>Completa</td><td>35 €</td></tr>
+                    <tr><td>Personal</td><td>50 €</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Solicita información</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="actividad">Actividad de interés:</label>
+                <select id="actividad" name="actividad">
+                    <option value="Musculación">Musculación</option>
+                    <option value="Spinning">Spinning</option>
+                    <option value="Entrenamiento personal">Entrenamiento personal</option>
+                </select>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+            <p id="mensaje" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fitness DAW - Proyecto educativo</p>
+    </footer>
+</body>
+</html>
